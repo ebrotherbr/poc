@@ -1,4 +1,4 @@
-package br.com.ebrother.poc.vo;
+package br.com.ebrother.poc.dto;
 
 import java.io.Serializable;
 

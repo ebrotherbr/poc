@@ -4,8 +4,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.ebrother.poc.dto.DTOBase;
 import br.com.ebrother.poc.model.EntidadeBase;
-import br.com.ebrother.poc.vo.DTOBase;
 
 public abstract class ConverterBase<T extends EntidadeBase<? extends Serializable>, S extends DTOBase>
 		implements Converter<T, S> {
