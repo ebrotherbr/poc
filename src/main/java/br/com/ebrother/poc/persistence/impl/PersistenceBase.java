@@ -15,6 +15,7 @@ import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Projections;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import br.com.ebrother.poc.messages.MessageByLocaleService;
 import br.com.ebrother.poc.model.EntidadeBase;
 import br.com.ebrother.poc.persistence.Persistence;
 
@@ -22,6 +23,9 @@ public abstract class PersistenceBase<P extends Serializable, T extends Entidade
 
 	@Autowired
 	EntityManager entityManager;
+
+	@Autowired
+	protected MessageByLocaleService mensagens;
 
 	protected EntityManager getEntityManager() {
 		return this.entityManager;
